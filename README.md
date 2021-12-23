@@ -105,7 +105,7 @@ def humanojoga(astr):
     if astr\[alfa-1\] != '⬜':
         print(f'invalid {alfa}')
         return humanojoga(astr)
-    astr = substituir(alfa-1)
+    astr = substituir(alfa-1, '❌')
     return astr
 
 def computadorjoga(astr):
