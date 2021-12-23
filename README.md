@@ -2,6 +2,8 @@
 
 A fun tutorial of python playing with the Tic Tac Toe
 
+**pt-br**
+
 Jogo da Velha[¶](#Jogo-da-Velha)
 ================================
 
