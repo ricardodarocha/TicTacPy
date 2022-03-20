@@ -1,6 +1,7 @@
 # TicTacPy
 
 A fun tutorial of python playing with the Tic Tac Toe
+Um tutorial bem legal de python brincando com o Jogo da Velha 
 
 **pt-br**
 
@@ -14,9 +15,31 @@ Definimos um jogo da velha como uma matriz $3×3$
 $$ (i+1, j+1) ∀ i,j ∈ range(3)$$
 
 ```py
-mat = [(i+1, j+1) for i in range(3) for j in range(3)]
+mat = [(i, j) for i in (1,2,3) for j in (1,2,3)]
 def col(x): return mat[x][0]
 def lin(x): return mat[x][1]
+```
+Nota: Esta é uma maneira avançada de criar um loop em pyhon, requer o conhecimento do conceito  [List Comprehensions] (https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+
+Nota: As funções col(x) e lin(x) são como uma planilha do excel no formato abaixo, que você separa em duas listas (A1:A3) e (B1:B3)
+ |A|B
+-|-|-
+1|1|1
+2|1|2
+3|1|3
+4|2|1
+5|2|2
+6|2|3
+7|3|1
+8|3|2
+9|3|3
+
+Esta é uma maneira mais simples de realizar o mesmo loop:
+```py
+mat = []
+for i in (1,2,3):
+  for j in (1,2,3):
+    mat += [(i, j)]
 ```
 
 Com as colunas e as linhas variando de $1$ a $3$ podemos obter um mapa das coordenadas
