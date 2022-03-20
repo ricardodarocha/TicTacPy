@@ -1,6 +1,6 @@
 # TicTacPy
 
-A fun tutorial of python playing with the Tic Tac Toe
+A fun tutorial of python playing with the Tic Tac Toe  
 Um tutorial bem legal de python brincando com o Jogo da Velha 
 
 **pt-br**
