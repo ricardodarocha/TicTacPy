@@ -6,14 +6,14 @@ A fun python tutorial playing with the Tic Tac Toe
   
 Um tutorial bem legal de python brincando com o Jogo da Velha 
 
-Jogo da Velha[¶](#Jogo-da-Velha)
+Jogo da Velha 
 ================================
 
 ###### Ricardo da Rocha ricardodarocha@outlook.com
 
 Definimos um jogo da velha como uma matriz $3×3$
 
-$$ (i+1, j+1) ∀ i,j ∈ range(3)$$
+$$ (i, j) ∀ i,j ∈ (1,2,3)$$
 
 ```py
 mat = [(i, j) for i in (1,2,3) for j in (1,2,3)]
@@ -22,15 +22,13 @@ def lin(x): return mat[x][1]
 ```
 Nota: Esta é uma maneira avançada de criar um loop em pyhon, requer o conhecimento do conceito  [List Comprehensions] (https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
-Nota: As funções col(x) e lin(x) são como uma planilha do excel no formato abaixo, que você separa em duas listas (A1:A3) e (B1:B3)
- |A|B
+Nota: As funções col(x) e lin(x) são como uma planilha do excel no formato abaixo, que você separa em duas listas (A1:A9) e (B1:B9)
+*|A|B
 -|-|-
 1|1|1
 2|1|2
 3|1|3
-4|2|1
-5|2|2
-6|2|3
+...|...|...
 7|3|1
 8|3|2
 9|3|3
@@ -51,7 +49,7 @@ Com as colunas e as linhas variando de $1$ a $3$ podemos obter um mapa das coord
 Nós podemos calcular qualquer casa a partir das coordenadas $i×j$ tal que
 $casa=j+3×i$
 
-Representamos com os valores \[casa ∈  [0..8]\]
+Representamos com os valores (0,1,2,...,8) \[casa ∈  [0..8]\]
 
 ---
 ❌⭕⬜⬜❌⬜⬜❌⬜
@@ -76,9 +74,10 @@ print(strf)
 ⬜❌⬜
 ⬜❌⬜
 ```
-
-Calculando o vencedor[¶](#Calculando-o-vencedor)
-================================================
+  
+    
+    
+## Calculando o vencedor 
 
 Concatenando a matriz em diferentes posições podemos encontrar o vencedor
 
@@ -113,7 +112,9 @@ print(solve(str))
 
 ```
 ## Protótipo Interativo
-Acesse através do jupyter notebook
+
+Dica
+Cole esté código em uma célula do jupyter notebook
 
 ```py
 
