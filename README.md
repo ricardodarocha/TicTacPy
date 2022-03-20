@@ -1,9 +1,10 @@
 # TicTacPy
 
-A fun python tutorial playing with the Tic Tac Toe  
-Um tutorial bem legal de python brincando com o Jogo da Velha 
+A fun python tutorial playing with the Tic Tac Toe
 
 **pt-br**
+  
+Um tutorial bem legal de python brincando com o Jogo da Velha 
 
 Jogo da Velha[¶](#Jogo-da-Velha)
 ================================
